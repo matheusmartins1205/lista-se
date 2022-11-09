@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio2</title>
+</head>
+<body>
+    <h1>Diferença de peso usando função Se.</h1>
+    <div id="peso"></div>
+ <script>
+    let nome1 = prompt ("Digite o nome da primeira pessoa");
+    let peso1 = Number(prompt("Digite o peso desta pessoa"));
+    let nome2 = prompt ("Digite o nome da segunda pessoa");
+    let peso2 = Number(prompt("Digite o peso desta segunda pessoa"));
+    let resul;
+
+   if (peso1 > peso2){
+        resul = "O " + nome1 + " é mais obeso que  " + nome2 + ".";
+   }
+   else{
+        resul = "O " + nome2 + " é mais obeso que  " + nome1 + ".";
+   }
+
+   let resul1 = "Nome: " + nome1 + ", pesa " + peso1;
+   let resul2 = "Nome: " + nome2 + ", pesa " + peso2;
+
+
+   document.getElementById("peso").innerHTML=resul;
+
+ </script>
+</body>
+</html>
